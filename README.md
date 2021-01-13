@@ -41,3 +41,17 @@ TODO: prerequisite, volumes, script, estimated time
 ```bash
 osm2pgrouting --f /home/osm/ile-de-france-latest-reduc.osm --conf /usr/local/share/osm2pgrouting/mapconfig.xml --dbname routing_db --username routing_user --clean
 ```
+
+To backup the imported data that was stored in the `db-data` volume, turn down the composition but keep the volume, then run the following:
+
+```bash
+docker run --rm -v routing_perfs_db-data:/volume -v /tmp:/backup alpine tar -cjf /backup/routing_archive.tar.bz2 -C /volume ./
+```
+
+This will create a new file on the host machine, `/tmp/routing_archive.tar.bz2`, owned by `root`.
+
+To restore the backup, just paste the `routing_archive.tar.bz2` to `/tmp/` on the host machine, then run the following:
+
+```bash
+docker run --rm -v routing_perfs_db-data:/volume -v /tmp:/backup alpine sh -c "rm -rf /volume/{*,.*} ; tar -C /volume/ -xjf /backup/routing_archive.tar.bz2"
+```
