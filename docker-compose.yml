@@ -7,12 +7,15 @@ services:
       - "5432:5432"
     volumes:
       - db-data:/var/lib/postgresql/data
+      - ./osm:/home/osm
     environment:
       - POSTGRES_PASSWORD=postgres
   valhalla:
     image: gisops/valhalla:3.0.9
     ports:
       - "8002:8002"
+    volumes:
+      - ./valhalla/custom_files/:/custom_files
     environment:
       - min_x=-180
       - min_y=-90
