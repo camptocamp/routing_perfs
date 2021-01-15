@@ -9,5 +9,20 @@ services:
       - db-data:/var/lib/postgresql/data
     environment:
       - POSTGRES_PASSWORD=postgres
+  valhalla:
+    image: gisops/valhalla:3.0.9
+    ports:
+      - "8002:8002"
+    environment:
+      - min_x=-180
+      - min_y=-90
+      - max_x=180
+      - max_y=90
+      - use_tiles_ignore_pbf=False
+      - force_rebuild=False
+      - force_rebuild_elevation=False
+      - build_elevation=False
+      - build_admins=False
+      - build_time_zones=False
 volumes:
   db-data:
