@@ -1,19 +1,39 @@
 version: "3"
+
+networks:
+  k6:
+  pgrouting:
+
+volumes:
+  db-data:
+
 services:
   pgrouting:
     build: ./pgrouting/
     image: camptocamp/osm2pgrouting:13-3.0-3.1.1-2.3.6
+    networks:
+      - pgrouting
     ports:
-      - "5432:5432"
+      - "5432"
     volumes:
       - db-data:/var/lib/postgresql/data
-      - ./osm:/home/osm
+      - ./osm:/osm
     environment:
       - POSTGRES_PASSWORD=postgres
+  http2pgrouting:
+    build: ./http2pgrouting/
+    image: camptocamp/http2pgrouting
+    networks:
+      - pgrouting
+      - k6
+    ports:
+      - "3000"
   valhalla:
     image: gisops/valhalla:3.0.9
+    networks:
+      - k6
     ports:
-      - "8002:8002"
+      - "8002"
     volumes:
       - ./valhalla/custom_files/:/custom_files
     environment:
@@ -27,5 +47,11 @@ services:
       - build_elevation=False
       - build_admins=False
       - build_time_zones=False
-volumes:
-  db-data:
+  k6:
+    image: loadimpact/k6:0.29.0
+    entrypoint: /bin/sh
+    tty: true
+    networks:
+      - k6
+    volumes:
+      - ./k6/scripts:/scripts
