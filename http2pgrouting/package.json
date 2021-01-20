@@ -1,0 +1,12 @@
+{
+  "name": "http2pgrouting",
+  "version": "0.1.0",
+  "description": "HTTP client to a pgRouting database",
+  "main": "src/index.js",
+  "author": "CampToCamp",
+  "dependencies": {
+    "@hapi/hapi": "^20.0.1",
+    "pg": "^8.4.2",
+    "sequelize": "~6.1.1"
+  }
+}

@@ -1,3 +1,4 @@
 /backup
+/http2pgrouting/node_modules/*
 /osm
 /valhalla/custom_files/*
