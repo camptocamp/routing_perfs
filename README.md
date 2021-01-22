@@ -38,7 +38,7 @@ It will start the services:
 TODO: prerequisite, volumes, script, estimated time
 
 ```bash
-osmconvert /osm/ile-de-france-latest.osm.pbf --drop-author --drop-version --out-osm -o=/osm/ile-de-france-latest-reduc.osm
+osmconvert /osm/Melun-Fontainebleau-Montereau.osm.pbf --drop-author --drop-version --out-osm -o=/osm/Melun-Fontainebleau-Montereau-reduc.osm
 ```
 
 ## Importing OSM data
@@ -48,7 +48,7 @@ osmconvert /osm/ile-de-france-latest.osm.pbf --drop-author --drop-version --out-
 TODO: prerequisite, volumes, script, estimated time
 
 ```bash
-osm2pgrouting --f /osm/ile-de-france-latest-reduc.osm --conf /usr/local/share/osm2pgrouting/mapconfig.xml --dbname routing_db --username routing_user --clean
+osm2pgrouting --f /osm/Melun-Fontainebleau-Montereau-reduc.osm --conf /usr/local/share/osm2pgrouting/mapconfig.xml --dbname routing_db --username routing_user --clean
 ```
 
 To backup the imported data that was stored in the `db-data` volume, turn down the composition but keep the volume, then run the following:

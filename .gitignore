@@ -1,4 +1,5 @@
 /backup
 /http2pgrouting/node_modules/*
-/osm
+/osm/*
+!/osm/Melun-Fontainebleau-Montereau.osm.pbf
 /valhalla/custom_files/*
