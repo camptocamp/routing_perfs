@@ -17,10 +17,12 @@ docker-compose up
 
 It will start the services:
 
-- pgrouting: [More info](pgrouting/README.md)
-- http2pgrouting: [More info](http2pgrouting/README.md)
-- valhalla
-- k6
+- pgrouting: PostgreSQL + PostGIS based routing engine [More info](pgrouting/README.md)
+- http2pgrouting: Minimalist HTTP client too pgRouting [More info](http2pgrouting/README.md)
+- valhalla: routing engine
+- influxdb: database to store load tests results
+- grafana: dashboard to visualize load tests results
+- k6: load testing tool
 
 ### Networks
 
@@ -74,24 +76,29 @@ As described in [Build Valhalla with arbitrary OSM data](https://github.com/gis-
 
 ## Running tests
 
-To run `sh` inside the k6 container:
-
-```bash
-docker exec -ti routing_perfs_k6_1 sh
-```
-
 ### pgRouting
 
 To run pgRouting test script:
 
-```sh
-k6 run scripts/pgrouting.js
+```bash
+docker-compose run k6 run /scripts/pgrouting.js
 ```
 
 ### Valhalla
 
 To run Valhalla test script:
 
-```sh
-k6 run scripts/valhalla.js
+```bash
+docker-compose run k6 run /scripts/valhalla.js
 ```
+
+## Visualizing results
+
+Go to http://localhost:3000 to access Grafana.
+
+Add an InfluxDB datasource:
+
+- URL: http://influxdb:8086
+- Database: k6
+
+Import one of k6 recommended dashboards, for example: https://grafana.com/grafana/dashboards/2587
