@@ -14,6 +14,12 @@ Then, `osmconvert` is installed too.
 
 Finally, the initialization files are copied.
 
+## Overwritting postgresql.conf
+
+```bash
+docker run --rm -v routing_perfs_db-data:/volume -v ${PWD}:/pgrouting alpine sh -c "cp /pgrouting/postgresql_tuned.conf /volume/postgresql.conf"
+```
+
 ## Initializing the database
 
 As stated on the [official postgres dockerhub page](https://hub.docker.com/_/postgres):
