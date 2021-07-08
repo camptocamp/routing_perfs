@@ -1,0 +1,74 @@
+
+          /\      |‾‾| /‾‾/   /‾‾/   
+     /\  /  \     |  |/  /   /  /    
+    /  \/    \    |     (   /   ‾‾\  
+   /          \   |  |\  \ |  (‾)  | 
+  / __________ \  |__| \__\ \_____/ .io
+
+  execution: local
+     script: /scripts/http2pgrouting/smoke.js
+     output: influxdb=http://influxdb:8086/k6 (http://influxdb:8086)
+
+  scenarios: (100.00%) 1 scenario, 1 max VUs, 1m30s max duration (incl. graceful stop):
+           * default: 1 looping VUs for 1m0s (gracefulStop: 30s)
+
+
+running (1m00.3s), 0/1 VUs, 60 complete and 0 interrupted iterations
+default ✓ [======================================] 1 VUs  1m0s
+
+    ✓ is HTTP status 200
+    ✓ is body not empty
+    ✓ is pgRouting OK
+
+    checks.....................: 100.00% ✓ 180 ✗ 0  
+    data_received..............: 11 kB   187 B/s
+    data_sent..................: 5.3 kB  88 B/s
+    http_req_blocked...........: avg=18.25µs  min=3.41µs   med=12.4µs  max=378.93µs p(90)=15.95µs p(95)=16.77µs 
+    http_req_connecting........: avg=1.9µs    min=0s       med=0s      max=114.41µs p(90)=0s      p(95)=0s      
+  ✓ http_req_duration..........: avg=3.4ms    min=1.03ms   med=3.66ms  max=5.2ms    p(90)=3.92ms  p(95)=3.95ms  
+    http_req_receiving.........: avg=174.31µs min=38.81µs  med=178.9µs max=263.71µs p(90)=227.4µs p(95)=253.47µs
+    http_req_sending...........: avg=62.84µs  min=16.19µs  med=65.4µs  max=104.73µs p(90)=80.75µs p(95)=87.77µs 
+    http_req_tls_handshaking...: avg=0s       min=0s       med=0s      max=0s       p(90)=0s      p(95)=0s      
+    http_req_waiting...........: avg=3.17ms   min=978.57µs med=3.4ms   max=4.9ms    p(90)=3.66ms  p(95)=3.68ms  
+    http_reqs..................: 60      0.995323/s
+    iteration_duration.........: avg=1s       min=1s       med=1s      max=1s       p(90)=1s      p(95)=1s      
+    iterations.................: 60      0.995323/s
+    vus........................: 1       min=1 max=1
+    vus_max....................: 1       min=1 max=1
+
+          /\      |‾‾| /‾‾/   /‾‾/   
+     /\  /  \     |  |/  /   /  /    
+    /  \/    \    |     (   /   ‾‾\  
+   /          \   |  |\  \ |  (‾)  | 
+  / __________ \  |__| \__\ \_____/ .io
+
+  execution: local
+     script: /scripts/http2pgrouting/smoke.js
+     output: influxdb=http://influxdb:8086/k6 (http://influxdb:8086)
+
+  scenarios: (100.00%) 1 scenario, 1 max VUs, 1m30s max duration (incl. graceful stop):
+           * default: 1 looping VUs for 1m0s (gracefulStop: 30s)
+
+
+running (1m00.2s), 0/1 VUs, 60 complete and 0 interrupted iterations
+default ✓ [======================================] 1 VUs  1m0s
+
+    ✓ is HTTP status 200
+    ✓ is body not empty
+    ✓ is pgRouting OK
+
+    checks.....................: 100.00% ✓ 180 ✗ 0  
+    data_received..............: 11 kB   187 B/s
+    data_sent..................: 5.3 kB  88 B/s
+    http_req_blocked...........: avg=17.49µs  min=3.34µs   med=9.2µs    max=467.74µs p(90)=16.7µs   p(95)=19.32µs 
+    http_req_connecting........: avg=2.44µs   min=0s       med=0s       max=146.97µs p(90)=0s       p(95)=0s      
+  ✓ http_req_duration..........: avg=2.39ms   min=941.04µs med=2.24ms   max=4.11ms   p(90)=3.79ms   p(95)=3.96ms  
+    http_req_receiving.........: avg=120.57µs min=43.76µs  med=107.18µs max=239.83µs p(90)=203.86µs p(95)=212.01µs
+    http_req_sending...........: avg=44.17µs  min=13.99µs  med=46.29µs  max=102.53µs p(90)=75.35µs  p(95)=81.96µs 
+    http_req_tls_handshaking...: avg=0s       min=0s       med=0s       max=0s       p(90)=0s       p(95)=0s      
+    http_req_waiting...........: avg=2.23ms   min=866.39µs med=2.1ms    max=3.85ms   p(90)=3.54ms   p(95)=3.76ms  
+    http_reqs..................: 60      0.996584/s
+    iteration_duration.........: avg=1s       min=1s       med=1s       max=1s       p(90)=1s       p(95)=1s      
+    iterations.................: 60      0.996584/s
+    vus........................: 1       min=1 max=1
+    vus_max....................: 1       min=1 max=1

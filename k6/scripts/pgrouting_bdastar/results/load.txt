@@ -1,0 +1,75 @@
+Melun-Fontainebleau-Montereau
+SELECT count(*) FROM ways; => 81931
+
+
+          /\      |‾‾| /‾‾/   /‾‾/   
+     /\  /  \     |  |/  /   /  /    
+    /  \/    \    |     (   /   ‾‾\  
+   /          \   |  |\  \ |  (‾)  | 
+  / __________ \  |__| \__\ \_____/ .io
+
+  execution: local
+     script: /scripts/pgrouting_bdastar/load.js
+     output: influxdb=http://influxdb:8086/k6 (http://influxdb:8086)
+
+  scenarios: (100.00%) 1 scenario, 100 max VUs, 20m30s max duration (incl. graceful stop):
+           * default: Up to 100 looping VUs for 20m0s over 3 stages (gracefulRampDown: 30s, gracefulStop: 30s)
+
+
+running (20m00.2s), 000/100 VUs, 14761 complete and 0 interrupted iterations
+default ✓ [======================================] 000/100 VUs  20m0s
+
+    ✓ is HTTP status 200
+    ✓ is body not empty
+
+    checks.....................: 100.00% ✓ 29522 ✗ 0    
+    data_received..............: 105 MB  88 kB/s
+    data_sent..................: 8.2 MB  6.8 kB/s
+    http_req_blocked...........: avg=15.45µs  min=2.94µs   med=7.48µs   max=38.9ms  p(90)=11.86µs  p(95)=18.16µs 
+    http_req_connecting........: avg=5.75µs   min=0s       med=0s       max=38.83ms p(90)=0s       p(95)=0s      
+  ✗ http_req_duration..........: avg=5.11s    min=131.36ms med=6.38s    max=8.48s   p(90)=6.89s    p(95)=6.99s   
+    http_req_receiving.........: avg=128.59µs min=40.51µs  med=114.08µs max=6.58ms  p(90)=161.95µs p(95)=184.24µs
+    http_req_sending...........: avg=51.77µs  min=18.54µs  med=44.35µs  max=6.85ms  p(90)=66.13µs  p(95)=78.05µs 
+    http_req_tls_handshaking...: avg=0s       min=0s       med=0s       max=0s      p(90)=0s       p(95)=0s      
+    http_req_waiting...........: avg=5.11s    min=131.23ms med=6.38s    max=8.48s   p(90)=6.89s    p(95)=6.99s   
+    http_reqs..................: 14761   12.299118/s
+    iteration_duration.........: avg=6.12s    min=1.13s    med=7.38s    max=9.48s   p(90)=7.89s    p(95)=7.99s   
+    iterations.................: 14761   12.299118/s
+    vus........................: 1       min=1   max=100
+    vus_max....................: 100     min=100 max=100
+
+          /\      |‾‾| /‾‾/   /‾‾/   
+     /\  /  \     |  |/  /   /  /    
+    /  \/    \    |     (   /   ‾‾\  
+   /          \   |  |\  \ |  (‾)  | 
+  / __________ \  |__| \__\ \_____/ .io
+
+  execution: local
+     script: /scripts/pgrouting_bdastar/load.js
+     output: influxdb=http://influxdb:8086/k6 (http://influxdb:8086)
+
+  scenarios: (100.00%) 1 scenario, 100 max VUs, 20m30s max duration (incl. graceful stop):
+           * default: Up to 100 looping VUs for 20m0s over 3 stages (gracefulRampDown: 30s, gracefulStop: 30s)
+
+
+running (20m00.9s), 000/100 VUs, 17450 complete and 0 interrupted iterations
+default ✓ [======================================] 000/100 VUs  20m0s
+
+    ✓ is HTTP status 200
+    ✓ is body not empty
+
+    checks.....................: 100.00% ✓ 34900 ✗ 0    
+    data_received..............: 124 MB  104 kB/s
+    data_sent..................: 9.7 MB  8.1 kB/s
+    http_req_blocked...........: avg=15.06µs  min=3.1µs    med=7.12µs   max=43.48ms p(90)=9.75µs   p(95)=16.3µs  
+    http_req_connecting........: avg=5.26µs   min=0s       med=0s       max=43.35ms p(90)=0s       p(95)=0s      
+  ✗ http_req_duration..........: avg=4.17s    min=125.4ms  med=5.04s    max=7.87s   p(90)=5.46s    p(95)=5.61s   
+    http_req_receiving.........: avg=123.62µs min=36.27µs  med=111.86µs max=38.38ms p(90)=154.69µs p(95)=172.27µs
+    http_req_sending...........: avg=46.39µs  min=15.33µs  med=41.41µs  max=4.44ms  p(90)=59.7µs   p(95)=67.57µs 
+    http_req_tls_handshaking...: avg=0s       min=0s       med=0s       max=0s      p(90)=0s       p(95)=0s      
+    http_req_waiting...........: avg=4.17s    min=125.31ms med=5.04s    max=7.87s   p(90)=5.46s    p(95)=5.61s   
+    http_reqs..................: 17450   14.531312/s
+    iteration_duration.........: avg=5.17s    min=1.12s    med=6.04s    max=8.87s   p(90)=6.46s    p(95)=6.61s   
+    iterations.................: 17450   14.531312/s
+    vus........................: 1       min=1   max=100
+    vus_max....................: 100     min=100 max=100

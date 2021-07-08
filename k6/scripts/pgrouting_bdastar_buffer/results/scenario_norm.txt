@@ -1,0 +1,76 @@
+
+          /\      |‾‾| /‾‾/   /‾‾/   
+     /\  /  \     |  |/  /   /  /    
+    /  \/    \    |     (   /   ‾‾\  
+   /          \   |  |\  \ |  (‾)  | 
+  / __________ \  |__| \__\ \_____/ .io
+
+  execution: local
+     script: /scripts/pgrouting_bdastar_buffer/scenario_norm.js
+     output: -
+
+  scenarios: (100.00%) 4 scenarios, 350 max VUs, 10m30s max duration (incl. graceful stop):
+           * m1Campagne: 0.22 iterations/s for 10m0s (maxVUs: 130, exec: m1_campagne, gracefulStop: 30s)
+           * m1Ville: 0.25 iterations/s for 10m0s (maxVUs: 150, exec: m1_ville, gracefulStop: 30s)
+           * m2: 0.08 iterations/s for 10m0s (maxVUs: 50, exec: m2, gracefulStop: 30s)
+           * m3: 0.03 iterations/s for 10m0s (maxVUs: 20, exec: m3, gracefulStop: 30s)
+
+
+running (10m01.1s), 000/350 VUs, 353 complete and 0 interrupted iterations
+m1Campagne ✓ [======================================] 130/130 VUs  10m0s  0 iters/s
+m1Ville    ✓ [======================================] 150/150 VUs  10m0s  0 iters/s
+m2         ✓ [======================================] 50/50 VUs    10m0s  0 iters/s
+m3         ✓ [======================================] 20/20 VUs    10m0s  0 iters/s
+
+    data_received..............: 17 MB  28 kB/s
+    data_sent..................: 2.9 MB 4.8 kB/s
+    http_req_blocked...........: avg=402.7µs  min=1.15µs  med=372.21µs max=10.95ms p(90)=912.77µs p(95)=1.17ms  
+    http_req_connecting........: avg=297.35µs min=0s      med=261.96µs max=10.61ms p(90)=679.69µs p(95)=956.41µs
+    http_req_duration..........: avg=121.31ms min=9.11ms  med=67.93ms  max=1.53s   p(90)=285.98ms p(95)=422.85ms
+    http_req_receiving.........: avg=67.21µs  min=16.2µs  med=62.6µs   max=1.73ms  p(90)=94.17µs  p(95)=115.51µs
+    http_req_sending...........: avg=123.76µs min=9.43µs  med=109.76µs max=1.13ms  p(90)=234.98µs p(95)=279.83µs
+    http_req_tls_handshaking...: avg=0s       min=0s      med=0s       max=0s      p(90)=0s       p(95)=0s      
+    http_req_waiting...........: avg=121.12ms min=9.07ms  med=67.74ms  max=1.53s   p(90)=285.89ms p(95)=422.67ms
+    http_reqs..................: 3583   5.960524/s
+    iteration_duration.........: avg=317.55ms min=30.52ms med=139.59ms max=1.56s   p(90)=815.19ms p(95)=1.29s   
+    iterations.................: 353    0.587236/s
+    vus........................: 20     min=20  max=350
+    vus_max....................: 350    min=350 max=350
+
+          /\      |‾‾| /‾‾/   /‾‾/   
+     /\  /  \     |  |/  /   /  /    
+    /  \/    \    |     (   /   ‾‾\  
+   /          \   |  |\  \ |  (‾)  | 
+  / __________ \  |__| \__\ \_____/ .io
+
+  execution: local
+     script: /scripts/pgrouting_bdastar_buffer/scenario_norm.js
+     output: -
+
+  scenarios: (100.00%) 4 scenarios, 350 max VUs, 10m30s max duration (incl. graceful stop):
+           * m1Campagne: 0.22 iterations/s for 10m0s (maxVUs: 130, exec: m1_campagne, gracefulStop: 30s)
+           * m1Ville: 0.25 iterations/s for 10m0s (maxVUs: 150, exec: m1_ville, gracefulStop: 30s)
+           * m2: 0.08 iterations/s for 10m0s (maxVUs: 50, exec: m2, gracefulStop: 30s)
+           * m3: 0.03 iterations/s for 10m0s (maxVUs: 20, exec: m3, gracefulStop: 30s)
+
+
+running (10m00.9s), 000/350 VUs, 352 complete and 0 interrupted iterations
+m1Campagne ✓ [======================================] 130/130 VUs  10m0s  0 iters/s
+m1Ville    ✓ [======================================] 150/150 VUs  10m0s  0 iters/s
+m2         ✓ [======================================] 50/50 VUs    10m0s  0 iters/s
+m3         ✓ [======================================] 20/20 VUs    10m0s  0 iters/s
+
+    data_received..............: 17 MB  28 kB/s
+    data_sent..................: 2.9 MB 4.8 kB/s
+    http_req_blocked...........: avg=431.43µs min=1.59µs  med=411.3µs  max=13.57ms p(90)=985.88µs p(95)=1.3ms   
+    http_req_connecting........: avg=316.81µs min=0s      med=281.37µs max=4.09ms  p(90)=743.82µs p(95)=1.07ms  
+    http_req_duration..........: avg=121.5ms  min=9.13ms  med=66.17ms  max=1.47s   p(90)=295.76ms p(95)=404.94ms
+    http_req_receiving.........: avg=67.63µs  min=13.45µs med=63.19µs  max=1.37ms  p(90)=94.71µs  p(95)=118.51µs
+    http_req_sending...........: avg=128.51µs min=9.76µs  med=115.39µs max=2.92ms  p(90)=243.6µs  p(95)=283.99µs
+    http_req_tls_handshaking...: avg=0s       min=0s      med=0s       max=0s      p(90)=0s       p(95)=0s      
+    http_req_waiting...........: avg=121.31ms min=9.08ms  med=66.02ms  max=1.47s   p(90)=295.6ms  p(95)=404.87ms
+    http_reqs..................: 3573   5.945709/s
+    iteration_duration.........: avg=315.22ms min=35.01ms med=137.18ms max=1.64s   p(90)=797.66ms p(95)=1.17s   
+    iterations.................: 352    0.585751/s
+    vus........................: 350    min=350 max=350
+    vus_max....................: 350    min=350 max=350

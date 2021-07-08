@@ -1,0 +1,62 @@
+
+          /\      |‾‾| /‾‾/   /‾‾/   
+     /\  /  \     |  |/  /   /  /    
+    /  \/    \    |     (   /   ‾‾\  
+   /          \   |  |\  \ |  (‾)  | 
+  / __________ \  |__| \__\ \_____/ .io
+
+  execution: local
+     script: /scripts/pgrouting_bdastar_buffer/smoke_M2.js
+     output: -
+
+  scenarios: (100.00%) 1 scenario, 1 max VUs, 1m30s max duration (incl. graceful stop):
+           * default: 1 looping VUs for 1m0s (gracefulStop: 30s)
+
+
+running (1m30.0s), 0/1 VUs, 0 complete and 1 interrupted iterations
+default ✓ [======================================] 1 VUs  1m0s
+WARN[0090] No script iterations finished, consider making the test duration longer 
+
+    data_received..............: 104 kB 1.2 kB/s
+    data_sent..................: 11 kB  125 B/s
+    http_req_blocked...........: avg=252.35µs min=3.02µs   med=9.11µs   max=638.5µs  p(90)=628.18µs p(95)=634.44µs
+    http_req_connecting........: avg=52.16µs  min=0s       med=0s       max=174.93µs p(90)=133.65µs p(95)=151.8µs 
+  ✓ http_req_duration..........: avg=340.41ms min=216.41ms med=319.83ms max=621.89ms p(90)=441.98ms p(95)=507.36ms
+    http_req_receiving.........: avg=125.85µs min=77.3µs   med=105.53µs max=206.49µs p(90)=203.92µs p(95)=205.21µs
+    http_req_sending...........: avg=50.47µs  min=23.58µs  med=34.38µs  max=92.43µs  p(90)=87.98µs  p(95)=91.27µs 
+    http_req_tls_handshaking...: avg=0s       min=0s       med=0s       max=0s       p(90)=0s       p(95)=0s      
+    http_req_waiting...........: avg=340.23ms min=216.24ms med=319.65ms max=621.74ms p(90)=441.84ms p(95)=507.22ms
+    http_reqs..................: 14     0.155473/s
+    vus........................: 1      min=1 max=1
+    vus_max....................: 1      min=1 max=1
+
+          /\      |‾‾| /‾‾/   /‾‾/   
+     /\  /  \     |  |/  /   /  /    
+    /  \/    \    |     (   /   ‾‾\  
+   /          \   |  |\  \ |  (‾)  | 
+  / __________ \  |__| \__\ \_____/ .io
+
+  execution: local
+     script: /scripts/pgrouting_bdastar_buffer/smoke_M2.js
+     output: -
+
+  scenarios: (100.00%) 1 scenario, 1 max VUs, 1m30s max duration (incl. graceful stop):
+           * default: 1 looping VUs for 1m0s (gracefulStop: 30s)
+
+
+running (1m30.0s), 0/1 VUs, 0 complete and 1 interrupted iterations
+default ✓ [======================================] 1 VUs  1m0s
+WARN[0090] No script iterations finished, consider making the test duration longer 
+
+    data_received..............: 104 kB 1.2 kB/s
+    data_sent..................: 11 kB  125 B/s
+    http_req_blocked...........: avg=209.41µs min=3.41µs   med=6.71µs   max=579.44µs p(90)=519.25µs p(95)=551.49µs
+    http_req_connecting........: avg=39.3µs   min=0s       med=0s       max=148.08µs p(90)=124.52µs p(95)=144.74µs
+  ✓ http_req_duration..........: avg=332.11ms min=185.18ms med=317.58ms max=564.46ms p(90)=421.22ms p(95)=478.62ms
+    http_req_receiving.........: avg=98.37µs  min=52.61µs  med=94.16µs  max=140.45µs p(90)=132.03µs p(95)=136.21µs
+    http_req_sending...........: avg=38.91µs  min=22.1µs   med=31.89µs  max=67.72µs  p(90)=65.25µs  p(95)=67.31µs 
+    http_req_tls_handshaking...: avg=0s       min=0s       med=0s       max=0s       p(90)=0s       p(95)=0s      
+    http_req_waiting...........: avg=331.97ms min=185.07ms med=317.41ms max=564.37ms p(90)=421.08ms p(95)=478.49ms
+    http_reqs..................: 14     0.155474/s
+    vus........................: 1      min=1 max=1
+    vus_max....................: 1      min=1 max=1

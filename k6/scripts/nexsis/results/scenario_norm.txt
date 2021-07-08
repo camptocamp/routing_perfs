@@ -1,0 +1,13 @@
+local
+pgrouting/pgrouting:11-2.5-2.6.2
+no tuning
+osm2po idf
+indexes OK
+
+http_req_duration..........: avg=11.4s    min=1.92s   med=10.01s   max=47.02s  p(90)=13.43s  p(95)=13.96s
+
+http_req_duration..........: avg=11.38s   min=3.22s   med=10s      max=45.05s  p(90)=13.2s    p(95)=13.61s
+
+AWS
+
+http_req_duration..........: avg=11.52s   min=10s    med=10.01s  max=59.98s  p(90)=18.04s   p(95)=20s

@@ -1,0 +1,34 @@
+
+          /\      |‾‾| /‾‾/   /‾‾/   
+     /\  /  \     |  |/  /   /  /    
+    /  \/    \    |     (   /   ‾‾\  
+   /          \   |  |\  \ |  (‾)  | 
+  / __________ \  |__| \__\ \_____/ .io
+
+  execution: local
+     script: /scripts/pgrouting_bdastar_buffer/scenario_norm_m1.js
+     output: -
+
+  scenarios: (100.00%) 2 scenarios, 280 max VUs, 10m30s max duration (incl. graceful stop):
+           * m1Campagne: 0.22 iterations/s for 10m0s (maxVUs: 130, exec: m1_campagne, gracefulStop: 30s)
+           * m1Ville: 0.25 iterations/s for 10m0s (maxVUs: 150, exec: m1_ville, gracefulStop: 30s)
+
+
+running (10m00.1s), 000/280 VUs, 281 complete and 0 interrupted iterations
+m1Campagne ✓ [======================================] 130/130 VUs  10m0s  0 iters/s
+m1Ville    ✓ [======================================] 150/150 VUs  10m0s  0 iters/s
+
+    data_received..............: 9.7 MB 16 kB/s
+    data_sent..................: 2.3 MB 3.8 kB/s
+    http_req_blocked...........: avg=426.66µs min=1.59µs med=543.7µs  max=18.52ms  p(90)=831.63µs p(95)=973.16µs
+    http_req_connecting........: avg=303.58µs min=0s     med=367.09µs max=18.44ms  p(90)=605.41µs p(95)=702.87µs
+    http_req_duration..........: avg=46.16ms  min=9.62ms med=44.97ms  max=136.75ms p(90)=77.49ms  p(95)=87.18ms 
+    http_req_receiving.........: avg=65.92µs  min=15.7µs med=60.04µs  max=1.3ms    p(90)=97.03µs  p(95)=125.66µs
+    http_req_sending...........: avg=133.75µs min=9.91µs med=158.81µs max=2.29ms   p(90)=238.06µs p(95)=253.62µs
+    http_req_tls_handshaking...: avg=0s       min=0s     med=0s       max=0s       p(90)=0s       p(95)=0s      
+    http_req_waiting...........: avg=45.96ms  min=9.57ms med=44.66ms  max=135.37ms p(90)=77.17ms  p(95)=87.01ms 
+    http_reqs..................: 2810   4.682842/s
+    iteration_duration.........: avg=95.51ms  min=39.3ms med=114.42ms max=196.74ms p(90)=140.33ms p(95)=146.85ms
+    iterations.................: 281    0.468284/s
+    vus........................: 280    min=280 max=280
+    vus_max....................: 280    min=280 max=280
