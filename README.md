@@ -47,11 +47,36 @@ osmconvert /osm/Melun-Fontainebleau-Montereau.osm.pbf --drop-author --drop-versi
 
 ### pgRouting
 
-TODO: prerequisite, volumes, script, estimated time
+TODO: prerequisite, volumes, script, estimated time, data loss analysis
+
+#### osm2pgrouting
 
 ```bash
 osm2pgrouting --f /osm/Melun-Fontainebleau-Montereau-reduc.osm --conf /usr/local/share/osm2pgrouting/mapconfig.xml --dbname routing_db --username routing_user --clean
 ```
+
+#### osm2po
+
+```bash
+docker run --rm -v ${PWD}/osm2po:/osm2po -v ${PWD}/osm:/osm openjdk:14 bash -c "cd /osm && java -Xmx16g -jar /osm2po/osm2po-core-5.3.2-signed.jar prefix=idf tileSize=x cmd=tjsp /osm/ile-de-france-latest.osm.pbf"
+```
+
+```bash
+docker exec -ti routing_perfs_pgrouting_1 bash
+```
+
+```bash
+psql -U routing_user -d routing_db -q -f "/osm/idf/idf_2po_4pgr.sql"
+psql -U routing_user -d routing_db -q -f "/osm/idf/idf_2po_vertex.sql"
+```
+
+```sql
+CREATE INDEX idf_2po_4pgr_geom_idx
+  ON idf_2po_4pgr
+  USING GIST (geom_way);
+```
+
+#### backup
 
 To backup the imported data that was stored in the `db-data` volume, turn down the composition but keep the volume, then run the following:
 
