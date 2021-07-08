@@ -106,7 +106,7 @@ As described in [Build Valhalla with arbitrary OSM data](https://github.com/gis-
 To run pgRouting test script:
 
 ```bash
-docker-compose run k6 run /scripts/pgrouting.js
+docker-compose run --rm k6 run /scripts/pgrouting.js
 ```
 
 ### Valhalla
@@ -114,7 +114,7 @@ docker-compose run k6 run /scripts/pgrouting.js
 To run Valhalla test script:
 
 ```bash
-docker-compose run k6 run /scripts/valhalla.js
+docker-compose run --rm k6 run /scripts/valhalla.js
 ```
 
 ## Visualizing results
