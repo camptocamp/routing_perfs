@@ -1,47 +1,70 @@
-export const intervention = {
+ const intervention = {
   id: 50194,
   osm_id: 300339517,
+  lat: 48.5253905,
+  lon: 2.6558766,
 };
 
-export const vehicles = [
+ const vehicles = [
   {
     id: 120020,
     osm_id: 670118899,
+    lat: 48.5465607,
+    lon: 2.6181036,
   },
   {
     id: 120105,
     osm_id: 670343196,
+    lat: 48.5550268,
+    lon: 2.6325229,
   },
   {
     id: 252143,
     osm_id: 4525103910,
+    lat: 48.5512906,
+    lon: 2.6525969,
   },
   {
     id: 49947,
     osm_id: 300270057,
+    lat: 48.5416088,
+    lon: 2.6830995,
   },
   {
     id: 51790,
     osm_id: 301915957,
+    lat: 48.5325409,
+    lon: 2.6908616,
   },
   {
     id: 50927,
     osm_id: 294110431,
+    lat: 48.5255899,
+    lon: 2.6716568,
   },
   {
     id: 50320,
     osm_id: 2154436428,
+    lat: 48.5101254,
+    lon: 2.6389131,
   },
   {
     id: 175833,
     osm_id: 1580119392,
+    lat: 48.519998,
+    lon: 2.6337417,
   },
   {
     id: 258685,
     osm_id: 4999278046,
+    lat: 48.5064281,
+    lon: 2.6127584,
   },
   {
     id: 102621,
     osm_id: 561625021,
+    lat: 48.5257354,
+    lon: 2.5993134,
   },
 ];
+module.exports = {intervention, vehicles};
