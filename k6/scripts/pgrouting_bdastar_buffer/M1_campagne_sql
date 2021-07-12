@@ -1,0 +1,8 @@
+SELECT edge.*
+FROM pgr_bdAstar(
+    'SELECT id AS id, * FROM edge',
+    -- source
+    71731454,
+    -- target
+    600989092) as astar
+	inner join edge on id = astar.edge;
