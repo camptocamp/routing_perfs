@@ -1,0 +1,75 @@
+local
+
+m1Campagne: {
+      executor: "constant-arrival-rate",
+      rate: 13,
+      timeUnit: "1m",
+      duration: "30s",
+      preAllocatedVUs: 130,
+      exec: "m1_campagne",
+    },
+
+master batch promise all
+
+http_req_duration..........: avg=990.53ms min=944.15ms med=979.93ms max=1.05s    p(90)=1.03s    p(95)=1.04s
+
+http_req_duration..........: avg=992.28ms min=958.87ms med=979.61ms max=1.1s     p(90)=1.03s    p(95)=1.06s
+
+branch many to one pg12
+
+http_req_duration..........: avg=388.59ms min=372.26ms med=384.6ms  max=414.84ms p(90)=404.49ms p(95)=409.67ms
+
+http_req_duration..........: avg=386.16ms min=374.14ms med=387.92ms max=400.91ms p(90)=398.78ms p(95)=399.85ms
+
+
+scenarios: {
+    m1Ville: {
+      executor: "constant-arrival-rate",
+      rate: 15,
+      timeUnit: "1m",
+      duration: "10m",
+      preAllocatedVUs: 150,
+      exec: "m1_ville",
+    },
+    m1Campagne: {
+      executor: "constant-arrival-rate",
+      rate: 13,
+      timeUnit: "1m",
+      duration: "10m",
+      preAllocatedVUs: 130,
+      exec: "m1_campagne",
+    },
+    m2: {
+      executor: "constant-arrival-rate",
+      rate: 5,
+      timeUnit: "1m",
+      duration: "10m",
+      preAllocatedVUs: 50,
+      exec: "m2",
+    },
+    m3: {
+      executor: "constant-arrival-rate",
+      rate: 2,
+      timeUnit: "1m",
+      duration: "10m",
+      preAllocatedVUs: 20,
+      exec: "m3",
+    },
+  },
+
+branch many to one pg12
+
+http_req_duration..........: avg=2.39s    min=457.76ms med=1.54s    max=9.33s    p(90)=7.53s    p(95)=7.81s
+
+http_req_duration..........: avg=2.39s    min=443.28ms med=1.56s    max=9.8s     p(90)=7.61s    p(95)=7.87s
+
+master batch promise all DATABASE_MAX_CONNECTIONS 500
+
+    ✗ is HTTP status 200
+     ↳  40% — ✓ 142 / ✗ 210
+    ✗ is body not empty
+     ↳  92% — ✓ 324 / ✗ 28
+    ✗ are temps OK
+     ↳  43% — ✓ 142 / ✗ 182
+
+http_req_duration..........: avg=18.08s   min=19.72ms  med=122.66ms max=1m0s     p(90)=58.41s   p(95)=59.99s

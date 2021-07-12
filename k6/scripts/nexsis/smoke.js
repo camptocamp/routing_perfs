@@ -15,8 +15,8 @@ export default function () {
     // "http://localhost:8084/temps-transit-dynamique/sequence-itineraire?startVid=1036&endVid=6472&bufferRadius=0.1",
     // "https://api.dev.scw.ansc.fr/itineraires/master/temps-transit-dynamique/temps?coordsDepart=48.5872454%2C2.9281479&latArrivee=48.5982848&lonArrivee=3.0580155&bufferRadius=10000",
     // "https://api.kube.dev.nexsis.ansc.minint.fr/itineraires/nexsis-2748-route-sequence-itineraire/temps-transit-dynamique/sequence-itineraire?startVid=1036&endVid=6472&bufferRadius=0.1",
-    "https://api.dev.scw.ansc.fr/itineraires/nexsis-3274-utiliser-many-to-one-pg-12/temps-transit-dynamique/temps?coordsDepart=48.530598%2C2.680752&coordsDepart=48.530697%2C2.680126&latArrivee=48.530899&lonArrivee=2.678850&bufferRadius=10000",
-    // "http://localhost:8084/temps-transit-dynamique/temps?coordsDepart=48.530598%2C2.680752&coordsDepart=48.530697%2C2.680126&latArrivee=48.530899&lonArrivee=2.678850&bufferRadius=10000",
+    // "https://api.dev.scw.ansc.fr/itineraires/nexsis-3274-utiliser-many-to-one-pg-12/temps-transit-dynamique/temps?coordsDepart=48.530598%2C2.680752&coordsDepart=48.530697%2C2.680126&latArrivee=48.530899&lonArrivee=2.678850&bufferRadius=10000",
+    "http://localhost:8084/temps-transit-dynamique/temps?coordsDepart=48.530598%2C2.680752&coordsDepart=48.530697%2C2.680126&latArrivee=48.530899&lonArrivee=2.678850&bufferRadius=10000",
     { headers: { "x-api-key": "ffef5b1a-d4bd-4b08-9b75-c7ab4f9aa14b" } }
   );
 
