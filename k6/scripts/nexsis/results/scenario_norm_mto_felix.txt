@@ -1,0 +1,121 @@
+Local run 1: origin/nexsis-3274-utiliser-many-to-one-pg-12
+
+    ✓ are temps OK
+    ✓ is HTTP status 200
+    ✓ is body not empty
+
+    checks.....................: 100.00% ✓ 1062  ✗ 0    
+    data_received..............: 413 kB  673 B/s
+    data_sent..................: 207 kB  336 B/s
+    http_req_blocked...........: avg=954.48µs min=104.46µs med=380.92µs max=59.25ms p(90)=1.45ms   p(95)=2.29ms  
+    http_req_connecting........: avg=763.56µs min=65.18µs  med=242.67µs max=59.1ms  p(90)=994.67µs p(95)=1.82ms  
+    http_req_duration..........: avg=8.26s    min=921.8ms  med=5.73s    max=35.43s  p(90)=22.31s   p(95)=24.4s   
+    http_req_receiving.........: avg=184.22µs min=53.9µs   med=137.38µs max=3.67ms  p(90)=218.62µs p(95)=304.93µs
+    http_req_sending...........: avg=189.8µs  min=41.91µs  med=112.4µs  max=4.79ms  p(90)=243.21µs p(95)=298.79µs
+    http_req_tls_handshaking...: avg=0s       min=0s       med=0s       max=0s      p(90)=0s       p(95)=0s      
+    http_req_waiting...........: avg=8.26s    min=921.69ms med=5.73s    max=35.43s  p(90)=22.31s   p(95)=24.4s   
+    http_reqs..................: 354     0.577261/s
+    iteration_duration.........: avg=8.26s    min=922.55ms med=5.74s    max=35.43s  p(90)=22.32s   p(95)=24.4s   
+    iterations.................: 354     0.577261/s
+    vus........................: 50      min=50  max=350
+    vus_max....................: 350     min=350 max=350
+
+
+Local run 2 (nothing else running): origin/nexsis-3274-utiliser-many-to-one-pg-12
+    ✓ is HTTP status 200
+    ✓ is body not empty
+    ✓ are temps OK
+
+    checks.....................: 100.00% ✓ 1059  ✗ 0    
+    data_received..............: 412 kB  679 B/s
+    data_sent..................: 206 kB  340 B/s
+    http_req_blocked...........: avg=401.19µs min=124.84µs med=284.16µs max=14.7ms   p(90)=509.2µs  p(95)=554.89µs
+    http_req_connecting........: avg=297.66µs min=70.64µs  med=187.91µs max=14.63ms  p(90)=359.64µs p(95)=398.03µs
+    http_req_duration..........: avg=2.84s    min=786.57ms med=2.02s    max=10.05s   p(90)=7.65s    p(95)=7.94s   
+    http_req_receiving.........: avg=93.65µs  min=53.73µs  med=90.68µs  max=245.78µs p(90)=126.21µs p(95)=137.14µs
+    http_req_sending...........: avg=107.81µs min=38.94µs  med=98.22µs  max=234.77µs p(90)=171.05µs p(95)=183.16µs
+    http_req_tls_handshaking...: avg=0s       min=0s       med=0s       max=0s       p(90)=0s       p(95)=0s      
+    http_req_waiting...........: avg=2.84s    min=786.41ms med=2.02s    max=10.05s   p(90)=7.65s    p(95)=7.94s   
+    http_reqs..................: 353     0.581991/s
+    iteration_duration.........: avg=2.84s    min=787.38ms med=2.02s    max=10.05s   p(90)=7.65s    p(95)=7.94s   
+    iterations.................: 353     0.581991/s
+    vus........................: 50      min=50  max=350
+    vus_max....................: 350     min=350 max=350
+
+
+Local run 1 (nothing else running) : master
+
+    ✓ is HTTP status 200
+    ✓ is body not empty
+    ✓ are temps OK
+
+    checks.....................: 100.00% ✓ 1062  ✗ 0    
+    data_received..............: 413 kB  679 B/s
+    data_sent..................: 207 kB  340 B/s
+    http_req_blocked...........: avg=345.37µs min=115.8µs  med=305.39µs max=2.19ms   p(90)=531.42µs p(95)=564.69µs
+    http_req_connecting........: avg=239.15µs min=79.24µs  med=201.32µs max=2.09ms   p(90)=365.59µs p(95)=406.81µs
+    http_req_duration..........: avg=2.8s     min=800.39ms med=2.03s    max=9.11s    p(90)=7.32s    p(95)=7.7s    
+    http_req_receiving.........: avg=89.51µs  min=51.92µs  med=88.87µs  max=177.63µs p(90)=116.8µs  p(95)=125.86µs
+    http_req_sending...........: avg=113.09µs min=41.44µs  med=99.92µs  max=258.83µs p(90)=189.28µs p(95)=207.04µs
+    http_req_tls_handshaking...: avg=0s       min=0s       med=0s       max=0s       p(90)=0s       p(95)=0s      
+    http_req_waiting...........: avg=2.8s     min=800.28ms med=2.03s    max=9.11s    p(90)=7.32s    p(95)=7.7s    
+    http_reqs..................: 354     0.582676/s
+    iteration_duration.........: avg=2.8s     min=800.95ms med=2.03s    max=9.11s    p(90)=7.32s    p(95)=7.7s    
+    iterations.................: 354     0.582676/s
+    vus........................: 50      min=50  max=350
+    vus_max....................: 350     min=350 max=350
+
+
+
+
+
+Local run 1 (nothing else running) : master 10b58107e2803c2c04163cb6a06b41228f3ba7e5
+
+running (1m01.3s), 000/150 VUs, 16 complete and 0 interrupted iterations
+m1Ville ✓ [ 100% ] 150/150 VUs  1m0s  0 iters/s
+
+    ✓ is HTTP status 200
+    ✓ is body not empty
+    ✓ are temps OK
+
+    checks.....................: 100.00% ✓ 48    ✗ 0    
+    data_received..............: 18 kB   300 B/s
+    data_sent..................: 9.3 kB  151 B/s
+    http_req_blocked...........: avg=447.51µs min=120.27µs med=522.57µs max=702.93µs p(90)=624.34µs p(95)=670.06µs
+    http_req_connecting........: avg=315.41µs min=83.09µs  med=365.31µs max=506.96µs p(90)=466.59µs p(95)=500.24µs
+    http_req_duration..........: avg=1.27s    min=1.23s    med=1.24s    max=1.38s    p(90)=1.35s    p(95)=1.36s   
+    http_req_receiving.........: avg=65.62µs  min=48.69µs  med=62.75µs  max=90.28µs  p(90)=85.31µs  p(95)=89.31µs 
+    http_req_sending...........: avg=150.76µs min=40.3µs   med=140.26µs max=267.5µs  p(90)=238.43µs p(95)=249.84µs
+    http_req_tls_handshaking...: avg=0s       min=0s       med=0s       max=0s       p(90)=0s       p(95)=0s      
+    http_req_waiting...........: avg=1.27s    min=1.23s    med=1.24s    max=1.38s    p(90)=1.35s    p(95)=1.36s   
+    http_reqs..................: 16      0.26117/s
+    iteration_duration.........: avg=1.27s    min=1.23s    med=1.25s    max=1.38s    p(90)=1.35s    p(95)=1.36s   
+    iterations.................: 16      0.26117/s
+    vus........................: 150     min=150 max=150
+    vus_max....................: 150     min=150 max=150
+
+
+Local run 2 (nothing else running): origin/nexsis-3274-utiliser-many-to-one-pg-12
+
+running (1m00.0s), 000/150 VUs, 15 complete and 0 interrupted iterations
+m1Ville ✓ [ 100% ] 150/150 VUs  1m0s  0 iters/s
+
+    ✓ is HTTP status 200
+    ✓ is body not empty
+    ✓ are temps OK
+
+    checks.....................: 100.00% ✓ 45    ✗ 0    
+    data_received..............: 17 kB   287 B/s
+    data_sent..................: 8.7 kB  144 B/s
+    http_req_blocked...........: avg=474.54µs min=158.02µs med=507.02µs max=617.74µs p(90)=560.38µs p(95)=580.15µs
+    http_req_connecting........: avg=332.81µs min=103.18µs med=355.17µs max=458.94µs p(90)=405.25µs p(95)=425.93µs
+    http_req_duration..........: avg=1.22s    min=1.2s     med=1.22s    max=1.34s    p(90)=1.23s    p(95)=1.27s   
+    http_req_receiving.........: avg=65.53µs  min=52.38µs  med=61.79µs  max=87.26µs  p(90)=82.58µs  p(95)=84.8µs  
+    http_req_sending...........: avg=143.13µs min=39.42µs  med=143.41µs max=208.6µs  p(90)=181.53µs p(95)=190.74µs
+    http_req_tls_handshaking...: avg=0s       min=0s       med=0s       max=0s       p(90)=0s       p(95)=0s      
+    http_req_waiting...........: avg=1.22s    min=1.2s     med=1.21s    max=1.34s    p(90)=1.23s    p(95)=1.27s   
+    http_reqs..................: 15      0.249893/s
+    iteration_duration.........: avg=1.22s    min=1.2s     med=1.22s    max=1.34s    p(90)=1.23s    p(95)=1.27s   
+    iterations.................: 15      0.249893/s
+    vus........................: 150     min=150 max=150
+    vus_max....................: 150     min=150 max=150
