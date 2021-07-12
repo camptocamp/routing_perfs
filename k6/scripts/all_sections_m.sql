@@ -50,7 +50,7 @@ FROM pgr_bdAstar
     -- source 
     916092865, 
     -- target 
-    ARRAY[558239640] 
+    ARRAY[558239640, 1058236437, 539565015] 
 ) AS astar
 INNER JOIN edge
 ON id = astar.edge 
