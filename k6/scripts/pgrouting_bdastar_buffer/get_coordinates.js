@@ -13,7 +13,6 @@ function getLatLon(osmId){
         .then(res => res.json())
         .then(json => {
           console.log(json.elements[0])
-
         })
         .catch(err => console.log(err));
 }
@@ -21,5 +20,3 @@ function getLatLon(osmId){
 m1_v.vehicles.forEach(element => {
   getLatLon(element.osm_id)
 });
-
-getLatLon(element.osm_id)
