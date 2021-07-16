@@ -9,7 +9,7 @@ Thanks to the EXPLAIN ANALYZE I saw that ST_DWithin uses [ST_Expand](https://pos
 Therefore ST_Expand should only return the same results if the Line between the two points is parallel to the equator or in a 90 Degree angle from it since it uses Bounding boxes. 
 
 But in all of my experiments I got always the same result for both methods.
-
+In this [example](https://postgis.net/workshops/postgis-intro/spatial_relationships_exercises.html) ST_DWithin is used in the same way.
 ### Performance
 As seen in the explain and analyze below, the performance of actual time, planning time and execution time is faster for ST_DWithin by a factor of 2-3. Although, how farther away the two points are and the bigger the buffer gets, the smaller this difference becomes. So for short itineraries ST_DWithin could be beneficial, but more tests should be made.
 
