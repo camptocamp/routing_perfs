@@ -45,3 +45,278 @@ m1Ville ✓ [ 100% ] 150/150 VUs  10m0s  0 iters/s
     iterations.................: 150     0.249989/s
     vus........................: 150     min=150 max=150
     vus_max....................: 150     min=150 max=150
+
+
+2. Local M1_ville 5km buffer edge table: 14913 trançons (almost free) 10min
+
+running (10m01.2s), 000/150 VUs, 151 complete and 0 interrupted iterations
+m1Ville ✓ [ 100% ] 150/150 VUs  10m0s  0 iters/s
+
+    ✓ is HTTP status 200
+    ✓ is body not empty
+    ✓ are temps OK
+
+    checks.....................: 100.00% ✓ 453   ✗ 0    
+    data_received..............: 174 kB  289 B/s
+    data_sent..................: 87 kB   145 B/s
+    http_req_blocked...........: avg=550.8µs  min=126.12µs med=564.86µs max=1.35ms   p(90)=694.37µs p(95)=728.46µs
+    http_req_connecting........: avg=370.82µs min=87.67µs  med=376.58µs max=1.06ms   p(90)=465.92µs p(95)=488.78µs
+    http_req_duration..........: avg=1.13s    min=1.04s    med=1.12s    max=1.36s    p(90)=1.22s    p(95)=1.27s   
+    http_req_receiving.........: avg=75.46µs  min=48.17µs  med=68.51µs  max=230.65µs p(90)=96.96µs  p(95)=123.73µs
+    http_req_sending...........: avg=183.08µs min=45.11µs  med=184.24µs max=287.17µs p(90)=253.3µs  p(95)=263.87µs
+    http_req_tls_handshaking...: avg=0s       min=0s       med=0s       max=0s       p(90)=0s       p(95)=0s      
+    http_req_waiting...........: avg=1.13s    min=1.04s    med=1.12s    max=1.36s    p(90)=1.22s    p(95)=1.27s   
+    http_reqs..................: 151     0.251157/s
+    iteration_duration.........: avg=1.13s    min=1.04s    med=1.12s    max=1.37s    p(90)=1.22s    p(95)=1.27s   
+    iterations.................: 151     0.251157/s
+    vus........................: 150     min=150 max=150
+    vus_max....................: 150     min=150 max=150
+
+
+running (10m01.3s), 000/150 VUs, 151 complete and 0 interrupted iterations
+m1Ville ✓ [ 100% ] 150/150 VUs  10m0s  0 iters/s
+
+    ✓ is HTTP status 200
+    ✓ is body not empty
+    ✓ are temps OK
+
+    checks.....................: 100.00% ✓ 453   ✗ 0    
+    data_received..............: 174 kB  289 B/s
+    data_sent..................: 87 kB   145 B/s
+    http_req_blocked...........: avg=513.92µs min=123.64µs med=571.54µs max=1.14ms   p(90)=714.87µs p(95)=777.13µs
+    http_req_connecting........: avg=346.6µs  min=84.44µs  med=385.23µs max=858.72µs p(90)=485.51µs p(95)=515.67µs
+    http_req_duration..........: avg=1.14s    min=1.04s    med=1.12s    max=1.55s    p(90)=1.26s    p(95)=1.3s    
+    http_req_receiving.........: avg=74.12µs  min=52.46µs  med=70.17µs  max=199.95µs p(90)=94.52µs  p(95)=100.45µs
+    http_req_sending...........: avg=169.35µs min=40.45µs  med=180.63µs max=341.1µs  p(90)=256.03µs p(95)=271.54µs
+    http_req_tls_handshaking...: avg=0s       min=0s       med=0s       max=0s       p(90)=0s       p(95)=0s      
+    http_req_waiting...........: avg=1.14s    min=1.04s    med=1.12s    max=1.55s    p(90)=1.26s    p(95)=1.3s    
+    http_reqs..................: 151     0.251126/s
+    iteration_duration.........: avg=1.15s    min=1.04s    med=1.12s    max=1.56s    p(90)=1.26s    p(95)=1.3s    
+    iterations.................: 151     0.251126/s
+    vus........................: 150     min=150 max=150
+    vus_max....................: 150     min=150 max=150
+
+
+3. Local M1_ville 3km buffer edge table: 10974 trançons (almost free) 10min
+
+running (10m00.0s), 000/150 VUs, 150 complete and 0 interrupted iterations
+m1Ville ✓ [ 100% ] 150/150 VUs  10m0s  0 iters/s
+
+    ✓ is HTTP status 200
+    ✓ is body not empty
+    ✓ are temps OK
+
+    checks.....................: 100.00% ✓ 450   ✗ 0    
+    data_received..............: 173 kB  287 B/s
+    data_sent..................: 87 kB   144 B/s
+    http_req_blocked...........: avg=549.74µs min=131.46µs med=581.43µs max=2.16ms   p(90)=715µs    p(95)=818.89µs
+    http_req_connecting........: avg=369.15µs min=89.48µs  med=384.71µs max=1.3ms    p(90)=494.79µs p(95)=520.24µs
+    http_req_duration..........: avg=1.03s    min=965.83ms med=1.01s    max=1.31s    p(90)=1.11s    p(95)=1.15s   
+    http_req_receiving.........: avg=75.3µs   min=49.83µs  med=69.27µs  max=160.77µs p(90)=108.73µs p(95)=120.17µs
+    http_req_sending...........: avg=181.22µs min=37.63µs  med=179.27µs max=744.35µs p(90)=262.27µs p(95)=288.73µs
+    http_req_tls_handshaking...: avg=0s       min=0s       med=0s       max=0s       p(90)=0s       p(95)=0s      
+    http_req_waiting...........: avg=1.03s    min=965.51ms med=1.01s    max=1.31s    p(90)=1.1s     p(95)=1.15s   
+    http_reqs..................: 150     0.249988/s
+    iteration_duration.........: avg=1.03s    min=967.3ms  med=1.01s    max=1.31s    p(90)=1.11s    p(95)=1.15s   
+    iterations.................: 150     0.249988/s
+    vus........................: 150     min=150 max=150
+    vus_max....................: 150     min=150 max=150
+
+running (10m01.1s), 000/150 VUs, 151 complete and 0 interrupted iterations
+m1Ville ✓ [ 100% ] 150/150 VUs  10m0s  0 iters/s
+
+    ✓ is HTTP status 200
+    ✓ is body not empty
+    ✓ are temps OK
+
+    checks.....................: 100.00% ✓ 453   ✗ 0    
+    data_received..............: 174 kB  289 B/s
+    data_sent..................: 87 kB   145 B/s
+    http_req_blocked...........: avg=615.39µs min=126.32µs med=639.9µs  max=894.09µs p(90)=719.74µs p(95)=763.29µs
+    http_req_connecting........: avg=417.57µs min=86.64µs  med=430.78µs max=566.25µs p(90)=491.77µs p(95)=507.98µs
+    http_req_duration..........: avg=1.02s    min=958.39ms med=992.17ms max=2.11s    p(90)=1.07s    p(95)=1.11s   
+    http_req_receiving.........: avg=76.89µs  min=49.06µs  med=71.36µs  max=201.79µs p(90)=103.8µs  p(95)=113.98µs
+    http_req_sending...........: avg=194.76µs min=41.72µs  med=185.52µs max=311.72µs p(90)=266.17µs p(95)=273.44µs
+    http_req_tls_handshaking...: avg=0s       min=0s       med=0s       max=0s       p(90)=0s       p(95)=0s      
+    http_req_waiting...........: avg=1.02s    min=958.17ms med=991.92ms max=2.11s    p(90)=1.07s    p(95)=1.11s   
+    http_reqs..................: 151     0.251224/s
+    iteration_duration.........: avg=1.02s    min=959.63ms med=993.68ms max=2.11s    p(90)=1.07s    p(95)=1.12s   
+    iterations.................: 151     0.251224/s
+    vus........................: 150     min=150 max=150
+    vus_max....................: 150     min=150 max=150
+
+4. Local M1_ville 1km buffer edge table: 6839 trançons (almost free) 10min
+
+running (10m00.6s), 000/150 VUs, 151 complete and 0 interrupted iterations
+m1Ville ✓ [ 100% ] 150/150 VUs  10m0s  0 iters/s
+
+    ✓ is body not empty
+    ✓ are temps OK
+    ✓ is HTTP status 200
+
+    checks.....................: 100.00% ✓ 453   ✗ 0    
+    data_received..............: 174 kB  289 B/s
+    data_sent..................: 87 kB   145 B/s
+    http_req_blocked...........: avg=575.5µs  min=115.49µs med=606.57µs max=917.28µs p(90)=718.76µs p(95)=757.17µs
+    http_req_connecting........: avg=379.74µs min=79.83µs  med=414.29µs max=542.74µs p(90)=466.99µs p(95)=489.51µs
+    http_req_duration..........: avg=537.34ms min=472.62ms med=531.77ms max=702.69ms p(90)=591.39ms p(95)=615.02ms
+    http_req_receiving.........: avg=85.85µs  min=51.5µs   med=73.18µs  max=668.41µs p(90)=121.83µs p(95)=140.14µs
+    http_req_sending...........: avg=192.11µs min=40.29µs  med=202.38µs max=312.8µs  p(90)=267.71µs p(95)=275.3µs 
+    http_req_tls_handshaking...: avg=0s       min=0s       med=0s       max=0s       p(90)=0s       p(95)=0s      
+    http_req_waiting...........: avg=537.06ms min=472.42ms med=531.52ms max=702.35ms p(90)=590.99ms p(95)=614.81ms
+    http_reqs..................: 151     0.251411/s
+    iteration_duration.........: avg=538.83ms min=473.26ms med=533.43ms max=704.27ms p(90)=593.62ms p(95)=616.33ms
+    iterations.................: 151     0.251411/s
+    vus........................: 150     min=150 max=150
+    vus_max....................: 150     min=150 max=150
+
+
+
+running (10m00.1s), 000/150 VUs, 150 complete and 0 interrupted iterations
+m1Ville ✓ [ 100% ] 150/150 VUs  10m0s  0 iters/s
+
+    ✓ is HTTP status 200
+    ✓ is body not empty
+    ✓ are temps OK
+
+    checks.....................: 100.00% ✓ 450   ✗ 0    
+    data_received..............: 173 kB  287 B/s
+    data_sent..................: 87 kB   144 B/s
+    http_req_blocked...........: avg=546.19µs min=111.92µs med=581.3µs  max=1.13ms   p(90)=713.58µs p(95)=763.6µs 
+    http_req_connecting........: avg=365.77µs min=76.88µs  med=385.77µs max=585.5µs  p(90)=495.09µs p(95)=508.82µs
+    http_req_duration..........: avg=534.34ms min=473.9ms  med=521.18ms max=764.86ms p(90)=607.7ms  p(95)=657.19ms
+    http_req_receiving.........: avg=77.89µs  min=52.84µs  med=70.27µs  max=185.3µs  p(90)=105.76µs p(95)=127.15µs
+    http_req_sending...........: avg=188.49µs min=45.34µs  med=197.49µs max=371.11µs p(90)=271.09µs p(95)=291.42µs
+    http_req_tls_handshaking...: avg=0s       min=0s       med=0s       max=0s       p(90)=0s       p(95)=0s      
+    http_req_waiting...........: avg=534.07ms min=473.65ms med=520.91ms max=764.65ms p(90)=607.42ms p(95)=656.98ms
+    http_reqs..................: 150     0.249978/s
+    iteration_duration.........: avg=535.79ms min=475.95ms med=522.34ms max=765.61ms p(90)=608.98ms p(95)=658.38ms
+    iterations.................: 150     0.249978/s
+    vus........................: 150     min=150 max=150
+    vus_max....................: 150     min=150 max=150
+
+
+5. Local M1_ville 500m buffer edge table: 5297 trançons (almost free) 10min
+
+running (10m00.5s), 000/150 VUs, 151 complete and 0 interrupted iterations
+m1Ville ✓ [ 100% ] 150/150 VUs  10m0s  0 iters/s
+
+    ✓ is HTTP status 200
+    ✓ is body not empty
+    ✓ are temps OK
+
+    checks.....................: 100.00% ✓ 453   ✗ 0    
+    data_received..............: 174 kB  289 B/s
+    data_sent..................: 87 kB   145 B/s
+    http_req_blocked...........: avg=486.17µs min=146.88µs med=505.49µs max=757.04µs p(90)=551.19µs p(95)=577.4µs 
+    http_req_connecting........: avg=329.65µs min=100.31µs med=345.66µs max=442.07µs p(90)=382.68µs p(95)=386.5µs 
+    http_req_duration..........: avg=449.56ms min=433.59ms med=443.36ms max=690.82ms p(90)=463.07ms p(95)=481.93ms
+    http_req_receiving.........: avg=65.71µs  min=47.47µs  med=62.54µs  max=126.62µs p(90)=83.74µs  p(95)=94.64µs 
+    http_req_sending...........: avg=156.75µs min=46.33µs  med=149.94µs max=276.4µs  p(90)=217.34µs p(95)=225.95µs
+    http_req_tls_handshaking...: avg=0s       min=0s       med=0s       max=0s       p(90)=0s       p(95)=0s      
+    http_req_waiting...........: avg=449.34ms min=433.36ms med=443.15ms max=690.67ms p(90)=462.78ms p(95)=481.71ms
+    http_reqs..................: 151     0.251453/s
+    iteration_duration.........: avg=450.88ms min=434.37ms med=444.94ms max=691.77ms p(90)=464.31ms p(95)=483.03ms
+    iterations.................: 151     0.251453/s
+    vus........................: 150     min=150 max=150
+    vus_max....................: 150     min=150 max=150
+
+
+running (10m00.0s), 000/150 VUs, 150 complete and 0 interrupted iterations
+m1Ville ✓ [ 100% ] 150/150 VUs  10m0s  0 iters/s
+
+    ✓ is HTTP status 200
+    ✓ is body not empty
+    ✓ are temps OK
+
+    checks.....................: 100.00% ✓ 450   ✗ 0    
+    data_received..............: 173 kB  287 B/s
+    data_sent..................: 87 kB   144 B/s
+    http_req_blocked...........: avg=512.31µs min=126.97µs med=533.3µs  max=776.35µs p(90)=620.4µs  p(95)=658.92µs
+    http_req_connecting........: avg=348.49µs min=82.42µs  med=361.57µs max=490.88µs p(90)=436.55µs p(95)=450.19µs
+    http_req_duration..........: avg=456.95ms min=436.51ms med=447.02ms max=621.54ms p(90)=486.91ms p(95)=510.67ms
+    http_req_receiving.........: avg=67.58µs  min=48.3µs   med=63.23µs  max=134.06µs p(90)=89.01µs  p(95)=97.67µs 
+    http_req_sending...........: avg=156.44µs min=45.94µs  med=158.21µs max=298.17µs p(90)=216.63µs p(95)=227.16µs
+    http_req_tls_handshaking...: avg=0s       min=0s       med=0s       max=0s       p(90)=0s       p(95)=0s      
+    http_req_waiting...........: avg=456.72ms min=436.37ms med=446.82ms max=621.26ms p(90)=486.78ms p(95)=510.54ms
+    http_reqs..................: 150     0.249982/s
+    iteration_duration.........: avg=458.22ms min=437.12ms med=448.34ms max=622.55ms p(90)=487.72ms p(95)=511.26ms
+    iterations.................: 150     0.249982/s
+    vus........................: 150     min=150 max=150
+    vus_max....................: 150     min=150 max=150
+
+
+6. Local M1_ville 250m buffer edge table: 3352 trançons (almost free) 10min
+
+running (10m00.5s), 000/150 VUs, 151 complete and 0 interrupted iterations
+m1Ville ✓ [ 100% ] 150/150 VUs  10m0s  0 iters/s
+
+    ✓ are temps OK
+    ✓ is HTTP status 200
+    ✓ is body not empty
+
+    checks.....................: 100.00% ✓ 453   ✗ 0    
+    data_received..............: 174 kB  289 B/s
+    data_sent..................: 87 kB   145 B/s
+    http_req_blocked...........: avg=512.5µs  min=177.33µs med=519.35µs max=708.09µs p(90)=565.75µs p(95)=623.71µs
+    http_req_connecting........: avg=348.24µs min=119.36µs med=356.77µs max=465.37µs p(90)=393.39µs p(95)=404.26µs
+    http_req_duration..........: avg=410.81ms min=390.82ms med=401.79ms max=579.63ms p(90)=427.31ms p(95)=472.17ms
+    http_req_receiving.........: avg=71.03µs  min=50.3µs   med=64.83µs  max=309.89µs p(90)=95.86µs  p(95)=111.19µs
+    http_req_sending...........: avg=164.28µs min=59.69µs  med=158.35µs max=276.68µs p(90)=217.75µs p(95)=223.15µs
+    http_req_tls_handshaking...: avg=0s       min=0s       med=0s       max=0s       p(90)=0s       p(95)=0s      
+    http_req_waiting...........: avg=410.58ms min=390.63ms med=401.51ms max=579.49ms p(90)=427.08ms p(95)=471.88ms
+    http_reqs..................: 151     0.251477/s
+    iteration_duration.........: avg=412.14ms min=392.39ms med=402.91ms max=580.27ms p(90)=428.68ms p(95)=473.54ms
+    iterations.................: 151     0.251477/s
+    vus........................: 150     min=150 max=150
+    vus_max....................: 150     min=150 max=150
+
+running (10m00.1s), 000/150 VUs, 150 complete and 0 interrupted iterations
+m1Ville ✓ [ 100% ] 150/150 VUs  10m0s  0 iters/s
+
+    ✓ are temps OK
+    ✓ is HTTP status 200
+    ✓ is body not empty
+
+    checks.....................: 100.00% ✓ 450   ✗ 0    
+    data_received..............: 173 kB  287 B/s
+    data_sent..................: 87 kB   144 B/s
+    http_req_blocked...........: avg=477.61µs min=123.87µs med=509.43µs max=825.7µs  p(90)=629.92µs p(95)=658.8µs 
+    http_req_connecting........: avg=319.66µs min=71.29µs  med=341.16µs max=547.82µs p(90)=411.35µs p(95)=437.05µs
+    http_req_duration..........: avg=427.62ms min=389.43ms med=416.55ms max=589.74ms p(90)=469.15ms p(95)=496.24ms
+    http_req_receiving.........: avg=73.1µs   min=49.79µs  med=66.1µs   max=166.82µs p(90)=103.92µs p(95)=114.29µs
+    http_req_sending...........: avg=154.03µs min=42.2µs   med=153.83µs max=275.87µs p(90)=222.61µs p(95)=236.31µs
+    http_req_tls_handshaking...: avg=0s       min=0s       med=0s       max=0s       p(90)=0s       p(95)=0s      
+    http_req_waiting...........: avg=427.4ms  min=389.21ms med=416.25ms max=589.59ms p(90)=468.95ms p(95)=496.09ms
+    http_reqs..................: 150     0.249973/s
+    iteration_duration.........: avg=428.9ms  min=390.77ms med=417.73ms max=590.51ms p(90)=470.13ms p(95)=497.45ms
+    iterations.................: 150     0.249973/s
+    vus........................: 150     min=150 max=150
+    vus_max....................: 150     min=150 max=150
+
+
+7. Local M1_ville 1m buffer edge table: 757 trançons (almost free) 10min
+
+running (10m00.4s), 000/150 VUs, 151 complete and 0 interrupted iterations
+m1Ville ✓ [ 100% ] 150/150 VUs  10m0s  0 iters/s
+
+    ✓ is HTTP status 200
+    ✓ is body not empty
+    ✗ are temps OK
+     ↳  0% — ✓ 0 / ✗ 151
+
+    checks.....................: 66.66% ✓ 302   ✗ 151  
+    data_received..............: 161 kB 268 B/s
+    data_sent..................: 87 kB  145 B/s
+    http_req_blocked...........: avg=603.3µs  min=140.96µs med=641.91µs max=965.7µs  p(90)=760.13µs p(95)=807.25µs
+    http_req_connecting........: avg=398.64µs min=92.83µs  med=429.48µs max=559.04µs p(90)=492.46µs p(95)=511.78µs
+    http_req_duration..........: avg=362.46ms min=327.14ms med=354.51ms max=516.26ms p(90)=397.39ms p(95)=416.39ms
+    http_req_receiving.........: avg=97.46µs  min=49.48µs  med=66.1µs   max=537.99µs p(90)=208.22µs p(95)=229.87µs
+    http_req_sending...........: avg=200.35µs min=44.78µs  med=203.9µs  max=378.37µs p(90)=273.19µs p(95)=291.69µs
+    http_req_tls_handshaking...: avg=0s       min=0s       med=0s       max=0s       p(90)=0s       p(95)=0s      
+    http_req_waiting...........: avg=362.16ms min=326.82ms med=354.22ms max=515.95ms p(90)=397.16ms p(95)=416.06ms
+    http_reqs..................: 151    0.251502/s
+    iteration_duration.........: avg=364.07ms min=328.82ms med=356.12ms max=517.68ms p(90)=398.38ms p(95)=418.18ms
+    iterations.................: 151    0.251502/s
+    vus........................: 150    min=150 max=150
+    vus_max....................: 150    min=150 max=150
