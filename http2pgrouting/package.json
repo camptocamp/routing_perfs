@@ -7,6 +7,6 @@
   "dependencies": {
     "@hapi/hapi": "^20.0.1",
     "pg": "^8.4.2",
-    "sequelize": "~6.1.1"
+    "sequelize": "~6.28.2"
   }
 }
